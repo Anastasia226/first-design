@@ -1,69 +1,214 @@
+body {
+  background-color: #003b3c;
+}
+header {
+  margin-top: 150px;
+}
+#design {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+#heading {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 102px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#more {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+#info {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.5px;
+  line-height: 16px;
+  margin-top: 168px;
+  color: #ffffff;
+}
+#subtitle {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+#my-nav {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#tel {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#feedback .item {
+  padding: 20px;
+  border: 1px solid #f8cc09;
+  height: 100%;
+}
 .inter {
   position: relative;
   width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 59, 60)),
     url("../img/devon-janse-van-rensburg-DU8Z5djVJtg-unsplash\ 1.jpg");
 }
-.message {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 59, 60)),
-    url("../img/sidekix-media-zLT3VqWEgOQ-unsplash\ 1.png");
+hr {
+  height: 2px;
+  margin-top: 33px;
+  background: #ffffff;
 }
-input::placeholder {
+.absolute {
+  width: 30%;
+  background: #f8cc09;
+  margin-top: -13px;
+}
+a {
   color: white;
-  font-size: 1.5em;
 }
-.btn-primary {
-  color: #fff;
-  background-color: #f8cc09;
-  border-color: #f8cc09;
-  text-transform: uppercase;
-  width: 100%;
-  margin-top: 26px;
-  height: 50px;
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  transition: background-color 5000s ease-in-out 0s;
-}
-.form-control {
-  margin-top: 26px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #f8cc09;
-}
-.h-150 {
-  height: 94px;
-}
-aside p,
-.why {
+aside {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  text-transform: none;
+  color: #ffffff;
+  margin-top: 99px;
+  margin-bottom: 50px;
+}
+aside .about {
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
   color: #ffffff;
 }
-.like {
+#about .about {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#about .text {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+#about .numeric {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+
+  color: #e9bb55;
+}
+#about .item {
+  height: 100%;
+}
+#portfolio .about {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#portfolio .autor {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #ffffff;
+}
+#feedback .autor {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+}
+#feedback .text {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #ffffff;
+}
+#callback .title {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: bold;
@@ -74,37 +219,57 @@ aside p,
 
   color: #ffffff;
 }
-.design {
+#callback .text {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
-  margin-left: -7px;
-  text-align: start;
+  text-align: center;
+
   color: #ffffff;
 }
-.tel {
-  font-family: Roboto Condensed;
-  font-weight: bold;
-  font-size: 16px;
-  color: #ffffff;
+.item-call {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/sidekix-media-zLT3VqWEgOQ-unsplash\ 1.png);
+  margin-top: 50px;
+  background-repeat: round;
 }
-.tel1 {
+.form-control {
+  margin-top: 26px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #f8cc09;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #f8cc09;
+  border-color: #f8cc09;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 26px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+footer {
+  margin-top: 10px;
+}
+#callback .row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+footer .text-muted {
   font-family: Roboto Condensed;
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
   display: flex;
-  align-items: center;
-  text-align: right;
+  text-transform: uppercase;
+
   color: #ffffff;
-}
-.navbar-toggler-icon {
-  background-image: url("../img/icon.png");
 }
 .foot {
   font-family: Roboto Condensed;
@@ -116,146 +281,19 @@ aside p,
 
   color: #ffffff;
 }
-div .nav-link {
-  color: #ffffff;
+#menu .item {
+  border-bottom: yellow;
 }
-div .nav-link:hover {
-  font-weight: bold;
-}
-hr {
-  height: 2px;
-  margin-top: 15px;
-  background: #ffffff;
-}
-.absolute {
-  width: 30%;
-  background: yellow;
-  margin-top: -13px;
-}
-.item {
-  padding: 20px;
-  border: 1px solid #f8cc09;
-  width: auto;
-}
-aside p,
-.about {
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.autor1 {
+.tel {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-
-  color: #ffffff;
-}
-.autor {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-
-  line-height: 16px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
-.hr1 {
-  width: 10%;
-  background: yellow;
-  margin-top: -13px;
-}
-a {
-  color: white;
-}
-.nav-item {
-}
-.relative {
-  position: relative;
-}
-.design-in {
-  text-align: start;
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 96px;
-  line-height: 102px;
+  font-size: 36px;
+  line-height: 42px;
   display: flex;
   align-items: center;
+  text-align: right;
   text-transform: uppercase;
-  margin-top: 150px;
-  color: #ffffff;
-}
-.design-un {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-size: 18px;
-  margin-top: 30px;
-  text-align: start;
-  color: #ffffff;
-}
-.about {
-  margin-top: 30px;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.mt-10,
-.my-10 {
-  margin-top: 5rem !important;
-}
-.mt-11,
-.my-11 {
-  margin-top: 90px !important;
-}
-.menu {
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-
-  color: #ffffff;
-}
-header .header-content {
-  margin-top: 168px;
-}
-.num {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 0%;
-  /* or 0px */
-
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-
-  color: #e9bb55;
-}
-body {
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 59, 60);
-}
-.info {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
 
   color: #ffffff;
 }
