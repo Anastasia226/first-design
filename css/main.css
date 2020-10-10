@@ -7,7 +7,7 @@ header {
 .navbar-toggler-icon {
   background-image: url("../img/icon.png");
 }
-nav .container {
+navbar nav .container {
   border-bottom: 1px solid white;
 }
 .nav-item:hover {
@@ -91,7 +91,6 @@ a:hover {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -122,8 +121,7 @@ a:hover {
 .inter {
   position: relative;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 59, 60)),
-    url("../img/devon-janse-van-rensburg-DU8Z5djVJtg-unsplash\ 1.jpg");
+  background-image: url("../img/devon-janse-van-rensburg-DU8Z5djVJtg-unsplash\ 1.jpg");
 }
 hr {
   height: 2px;
@@ -299,6 +297,12 @@ input:-ms-input-placeholder {
   background-repeat: round;
 }
 .form-control {
+  margin-top: 26px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #f8cc09;
+}
+.form-control:focus {
   margin-top: 26px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0);
