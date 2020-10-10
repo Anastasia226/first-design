@@ -4,6 +4,27 @@ body {
 header {
   margin-top: 150px;
 }
+.navbar-toggler-icon {
+  background-image: url("../img/icon.png");
+}
+nav .container {
+  border-bottom: 1px solid white;
+}
+.nav-item:hover {
+  border-bottom: 1px solid #f8cc09;
+}
+nav .logo {
+  margin-left: -10px;
+}
+.active {
+  border-bottom: 1px solid #f8cc09;
+}
+footer .container {
+  border-top: 1px solid white;
+}
+a:hover {
+  color: white;
+}
 #design {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -280,9 +301,6 @@ footer .text-muted {
   text-transform: uppercase;
 
   color: #ffffff;
-}
-#menu .item {
-  border-bottom: yellow;
 }
 .tel {
   font-family: Roboto Condensed;
