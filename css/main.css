@@ -1,29 +1,28 @@
 body {
   background-color: #003b3c;
 }
+
 header {
   margin-top: 150px;
 }
+
 .navbar-toggler-icon {
   background-image: url("../img/icon.png");
 }
-navbar nav .container {
-  border-bottom: 1px solid white;
-}
-.nav-item:hover {
-  border-bottom: 1px solid #f8cc09;
-}
+
 nav .logo {
   margin-left: -10px;
 }
-.active {
-  border-bottom: 1px solid #f8cc09;
-}
+
 footer .container {
-  border-top: 1px solid white;
+  border-top: 2px solid white;
 }
+
 a:hover {
   color: white;
+}
+.d-flex {
+  display: contents;
 }
 #design {
   font-family: Roboto Condensed;
@@ -37,6 +36,7 @@ a:hover {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 #heading {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -49,22 +49,12 @@ a:hover {
 
   color: #ffffff;
 }
-#more {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: uppercase;
 
-  color: #ffffff;
-
-  opacity: 0.8;
-}
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: transparent;
 }
+
 #info {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -74,6 +64,23 @@ a:hover {
   margin-top: 168px;
   color: #ffffff;
 }
+
+#info .more {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  /*поменял отступ */
+  margin-top: 16px;
+  display: block;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+
 #subtitle {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -85,6 +92,7 @@ a:hover {
 
   color: #ffffff;
 }
+
 #my-nav {
   font-family: Ubuntu;
   font-style: normal;
@@ -113,29 +121,85 @@ a:hover {
 
   color: #ffffff;
 }
+
 #feedback .item {
   padding: 20px;
-  border: 1px solid #f8cc09;
+  border: 2px solid #e9bb55;
   height: 100%;
 }
+
 .inter {
   position: relative;
   width: 100%;
   background-image: url("../img/devon-janse-van-rensburg-DU8Z5djVJtg-unsplash\ 1.jpg");
+  background-size: cover;
 }
+
+.inter:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 59, 60, 0.1) 0%,
+    rgba(0, 59, 60, 0.4) 43.49%,
+    rgba(0, 59, 60, 0.5) 59.33%,
+    #003b3c 82.05%,
+    #003b3c 97.83%
+  );
+}
+
+/* Наведение на кнопки навбара */
+.navbar-container {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #fff;
+  display: contents;
+}
+
+.navbar-container .navbar-nav > li {
+  padding: 0px 12px;
+}
+
+.navbar-container .navbar-nav > li a {
+  position: relative;
+}
+
+.navbar-container .navbar-nav > li a:before {
+  content: " ";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  background: #e9bb55;
+  display: none;
+}
+
+.navbar-container .navbar-nav > li.active a:before,
+.navbar-container .navbar-nav > li:hover a:before {
+  display: block;
+}
+
 hr {
   height: 2px;
   margin-top: 33px;
   background: #ffffff;
 }
+
 .absolute {
   width: 30%;
   background: #f8cc09;
   margin-top: -13px;
 }
+
 a {
   color: white;
 }
+
 aside {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -147,6 +211,7 @@ aside {
   margin-top: 99px;
   margin-bottom: 50px;
 }
+
 aside .about {
   font-family: Ubuntu;
   font-weight: bold;
@@ -154,7 +219,9 @@ aside .about {
   line-height: 28px;
   text-transform: uppercase;
   color: #ffffff;
+  padding-top: 12px;
 }
+
 #about .about {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -165,6 +232,7 @@ aside .about {
 
   color: #ffffff;
 }
+
 #about .text {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -174,14 +242,16 @@ aside .about {
 
   color: #ffffff;
 }
+
 input::-webkit-input-placeholder {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   font-weight: bold;
   font-size: 14px;
   font-family: Roboto Condensed;
 }
+
 input {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   font-weight: bold;
   font-size: 14px;
   font-family: Roboto Condensed;
@@ -189,7 +259,7 @@ input {
 
 input:-moz-placeholder {
   /* Firefox 18- */
-  color: white !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   font-weight: bold;
   font-size: 14px;
   font-family: Roboto Condensed;
@@ -197,24 +267,26 @@ input:-moz-placeholder {
 
 input::-moz-placeholder {
   /* Firefox 19+ */
-  color: white !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   font-weight: bold;
   font-size: 14px;
   font-family: Roboto Condensed;
 }
 
 input:-ms-input-placeholder {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   font-weight: bold;
   font-size: 14px;
   font-family: Roboto Condensed;
 }
+
 #about .numeric {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 96px;
-  line-height: 0%;
+  /*line-height: 0%;*/
+  line-height: 75%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -223,9 +295,11 @@ input:-ms-input-placeholder {
 
   color: #e9bb55;
 }
+
 #about .item {
   height: 100%;
 }
+
 #portfolio .about {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -234,9 +308,24 @@ input:-ms-input-placeholder {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-
+  margin-bottom: 0;
   color: #ffffff;
 }
+
+#portfolio .item {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+  float: none;
+}
+
+#portfolio .item .name-group {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
 #portfolio .autor {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -244,9 +333,10 @@ input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-
+  margin-bottom: 0;
   color: #ffffff;
 }
+
 #feedback .autor {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -254,9 +344,11 @@ input:-ms-input-placeholder {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
+  margin-bottom: 0;
   color: #ffffff;
+  padding-bottom: 18px;
 }
+
 #feedback .text {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -266,6 +358,9 @@ input:-ms-input-placeholder {
   text-align: center;
 
   color: #ffffff;
+}
+#callback {
+  margin-top: 50px;
 }
 #callback .title {
   font-family: Ubuntu;
@@ -278,6 +373,7 @@ input:-ms-input-placeholder {
 
   color: #ffffff;
 }
+
 #callback .text {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -288,43 +384,86 @@ input:-ms-input-placeholder {
 
   color: #ffffff;
 }
+
 .item-call {
   position: relative;
   width: 100%;
   height: 100%;
   background-image: url(../img/sidekix-media-zLT3VqWEgOQ-unsplash\ 1.png);
   margin-top: 50px;
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-call:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 59, 60, 0.1) 0%,
+    rgba(0, 59, 60, 0.4) 43.49%,
+    rgba(0, 59, 60, 0.5) 59.33%,
+    #003b3c 82.05%,
+    #003b3c 97.83%
+  );
 }
 .form-control {
   margin-top: 26px;
-  height: 50px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0);
   border-color: #f8cc09;
+  padding: 18px;
+  line-height: 16px;
+  font-size: 14px;
 }
+
 .form-control:focus {
   margin-top: 26px;
-  height: 50px;
   background-color: rgba(0, 0, 0, 0);
   border-color: #f8cc09;
 }
+
 .btn-primary {
-  color: #fff;
-  background-color: #f8cc09;
-  border-color: #f8cc09;
-  text-transform: uppercase;
+  background-color: #e9bb55;
+  border-color: #e9bb55;
   width: 100%;
   margin-top: 26px;
   height: 50px;
   margin-bottom: 30px;
+
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #dcab3d;
+  border-color: #dcab3d;
+  box-shadow: none;
+}
+
 footer {
   margin-top: 10px;
 }
+
 #callback .row {
-  margin-top: 50px;
   margin-bottom: 50px;
 }
+
 footer .text-muted {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -336,6 +475,7 @@ footer .text-muted {
 
   color: #ffffff;
 }
+
 .foot {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -346,6 +486,7 @@ footer .text-muted {
 
   color: #ffffff;
 }
+
 .tel {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -358,4 +499,124 @@ footer .text-muted {
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+/*айфон 6,7,8,10 */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding-top: 17px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #fff;
+  }
+  header {
+    margin-top: 200px;
+  }
+  #heading {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 106.19%;
+    /* or 51px */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  #subtitle {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+  #info {
+    margin-top: 109px;
+  }
+  .mb-3 {
+    margin-bottom: 30px;
+  }
+  .mb-sm-3 {
+    margin-bottom: 20px;
+  }
+  aside {
+    margin-top: 93px;
+    margin-bottom: 29px;
+  }
+
+  aside .about {
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  #about .numeric {
+    font-size: 64px;
+  }
+  #about .about {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #about .text {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+  }
+  aside #project {
+    margin-top: -60px;
+  }
+  aside #feed {
+    margin-top: -60px;
+  }
+  #feedback .row {
+    margin-top: -10px;
+  }
+  #feedback .autor {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #feedback .item {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+  }
+  #callback .title {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  #callback .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .item-call {
+    margin-top: 0px;
+  }
+  .form-control {
+    padding: 12px;
+    margin-top: 22px;
+  }
+  footer .container {
+    border-top: 2px solid white;
+    width: 90%;
+    padding: 0;
+  }
+  #callback .row {
+    margin-bottom: 0;
+  }
+  .btn-primary {
+    margin-top: 22px;
+  }
+  .item-call {
+    background-size: contain;
+  }
+}
+
+/*айфон 5 */
+@media (max-width: 320px) {
 }
