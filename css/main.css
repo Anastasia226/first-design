@@ -500,7 +500,64 @@ footer .text-muted {
 
   color: #ffffff;
 }
+.page {
+  margin-top: 69px;
+}
+.list-page {
+  list-style-type: none;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  cursor: pointer;
+}
+.list-page .active {
+  font-size: 48px;
+  line-height: 56px;
+  color: rgb(255, 255, 255);
+}
 
+/* Слайдер */
+.slider {
+  position: relative;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 97%;
+  z-index: 10;
+  font-size: 0;
+  width: 102px;
+  height: 80px;
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  right: 52%;
+  background: url("../img/arrow1.svg") 0 0 / 100% no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+  fill: white;
+}
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  left: 52%;
+  background: url("../img/arrow1.svg") 0 0 / 100% no-repeat;
+  background-size: cover;
+}
 /*айфон 6,7,8,10 */
 @media (max-width: 768px) {
   .navbar-container {
@@ -571,9 +628,7 @@ footer .text-muted {
   aside #project {
     margin-top: -60px;
   }
-  aside #feed {
-    margin-top: -60px;
-  }
+
   #feedback .row {
     margin-top: -10px;
   }
@@ -615,8 +670,18 @@ footer .text-muted {
   .item-call {
     background-size: contain;
   }
+  .page {
+    margin-top: 25px;
+  }
+  .list-page {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .list-page .active {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
-
 /*айфон 5 */
 @media (max-width: 320px) {
 }
