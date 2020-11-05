@@ -3,36 +3,7 @@ let n2 = $(".n-2").text();
 let n3 = $(".n-3").text();
 let n4 = $(".n-4").text();
 let countNum = 1;
-let heading_setting = [
-  {},
-  {
-    obj: 0,
-    heading: "дизайн интерьера ",
-    subtitle:
-      " Подземный сток изменяет динамометаморфизм, за счет чего увеличивается мощность коры под многими хребтами.",
-  },
-  {
-    obj: 1,
-    heading: "Heading",
-    subtitle: "subtitle",
-  },
-  {
-    obj: 2,
-    heading: "дизайн интерьера",
-    subtitle:
-      " Подземный сток изменяет динамометаморфизм, за счет чего увеличивается мощность коры под многими хребтами.",
-  },
-  {
-    obj: 3,
-    heading: "Heading",
-    subtitle: "subtitle",
-  },
-  {
-    obj: 4,
-    heading: "Heading",
-    subtitle: "subtitle",
-  },
-];
+
 function p1() {
   let b = document.getElementById("hr1");
   b.align = "left";
@@ -76,39 +47,14 @@ function numAnimate() {
   }
   countNum--;
 }
-//слайдер для заголовка
-$(document).on("click", ".list", function () {
-  $(".active").removeClass("active");
-  $(this).addClass("active");
-  let text = $(this).text();
-  for (let i = 0; i < 5; i++) {
-    if (text == i) {
-      $("#heading").text(heading_setting[i].heading);
-      $("#subtitle").text(heading_setting[i].subtitle);
-    }
-  }
-});
-//слайдер для фото
-// $("#slider").each(function () {
-//   // Создаем карусель
 
-//   // При клике по кнопке Влево
-//   $(this)
-//     .find(".js-prev")
-//     .on("click", function () {
-//       // Перематываем карусель назад
-//       alert("prev");
-//     });
-
-//   // При клике по кнопке Вправо
-//   $(this)
-//     .find(".js-next")
-//     .on("click", function () {
-//       // Перематываем карусель вперед
-//       alert("next");
-//     });
-// });
 $(document).ready(function () {
+  //слайдер для заголовка
+  $(".slider-heading").slick({
+    dots: true,
+    arrows: false,
+  });
+  //слайдер для фото
   $(".slider").slick({
     slidesToShow: 4,
     responsive: [
@@ -118,6 +64,25 @@ $(document).ready(function () {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
     ],
   });
+  const slickDots = document.querySelector(".slick-dots");
+  for (let i = 0; i < slickDots.children.length; i++) {
+    $(".slick-dots")
+      .children(`:eq(${i})`)
+      .html(`0${i + 1}`);
+  }
+  $(".dots").append($(".slider-heading >ul"));
 });

@@ -503,7 +503,15 @@ footer .text-muted {
 .page {
   margin-top: 69px;
 }
-.list-page {
+.slider-heading {
+  position: relative;
+}
+.dots .slick-dots {
+  position: absolute;
+  top: 16%;
+  left: 60%;
+}
+.dots .slick-dots li {
   list-style-type: none;
   font-family: Roboto Condensed;
   font-style: normal;
@@ -514,22 +522,26 @@ footer .text-muted {
   text-align: right;
   cursor: pointer;
 }
-.list-page .active {
+.dots .slick-dots .slick-active {
   font-size: 48px;
   line-height: 56px;
   color: rgb(255, 255, 255);
 }
-
+.dots .slick-dots button {
+  background: transparent;
+  border: none;
+}
 /* Слайдер */
 .slider {
   position: relative;
 }
+
 .slider .slick-arrow {
   position: absolute;
   top: 97%;
   z-index: 10;
   font-size: 0;
-  width: 102px;
+  width: 109px;
   height: 80px;
   border: none;
   text-align: center;
@@ -547,15 +559,13 @@ footer .text-muted {
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
   right: 52%;
-  background: url("../img/arrow1.svg") 0 0 / 100% no-repeat;
+  background: url("../img/arr.svg") 0 0 / 100% no-repeat;
   background-size: cover;
-  transform: rotate(180deg);
-  fill: white;
 }
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
   left: 52%;
-  background: url("../img/arrow1.svg") 0 0 / 100% no-repeat;
+  background: url("../img/arr2.svg") 0 0 / 100% no-repeat;
   background-size: cover;
 }
 /*айфон 6,7,8,10 */
@@ -677,9 +687,16 @@ footer .text-muted {
     font-size: 14px;
     line-height: 16px;
   }
-  .list-page .active {
+  .dots .slick-dots {
+    left: -25%;
+  }
+  .dots .slick-dots .slick-active {
     font-size: 24px;
     line-height: 28px;
+  }
+  .dots .slick-dots li {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 /*айфон 5 */

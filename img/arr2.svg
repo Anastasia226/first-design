@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol height="64px" id="svg_6" viewBox="0 0 64 64" width="64px" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+   <g>
+    <polygon points="53.293,40.293 54.854,41.707 64,32.707 64,31.293 54.854,22.293 53.366,23.707 60.586,31 0,31 0,33 60.586,33  "/>
+   </g>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_4"/>
+  <use fill="#ffffff" id="svg_7" transform="matrix(9.92284 0 0 7.59548 2.96914 -111.555)" x="0" xlink:href="#svg_6" y="18.563676"/>
+  <g id="svg_8"/>
+ </g>
+</svg>
